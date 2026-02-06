@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help &amp; Tutorials — Rootling</title>
+  <meta name="description" content="Learn how to use Rootling with step-by-step guides, tutorials, and frequently asked questions.">
+  <meta name="theme-color" content="#16a34a">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span>🌱 Rootling</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="help.html" class="active">Help</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>Help &amp; Tutorials</h1>
+    <p>Everything you need to get started and master Rootling</p>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <div class="page-content">
+
+    <div class="help-grid">
+      <a href="#getting-started" class="help-card">
+        <span class="emoji">🚀</span>
+        <h3>Getting Started</h3>
+        <p>Set up Rootling and create your first propagation entry</p>
+      </a>
+      <a href="#photo-journal" class="help-card">
+        <span class="emoji">📸</span>
+        <h3>Photo Journal</h3>
+        <p>Document growth with photos and create time-lapses</p>
+      </a>
+      <a href="#tracking" class="help-card">
+        <span class="emoji">📊</span>
+        <h3>Growth Tracking</h3>
+        <p>Record measurements and monitor progress over time</p>
+      </a>
+      <a href="#reminders" class="help-card">
+        <span class="emoji">🔔</span>
+        <h3>Reminders</h3>
+        <p>Set up smart notifications for your propagation care</p>
+      </a>
+      <a href="#sync" class="help-card">
+        <span class="emoji">☁️</span>
+        <h3>iCloud Sync</h3>
+        <p>Keep your data in sync across all your Apple devices</p>
+      </a>
+      <a href="#faq" class="help-card">
+        <span class="emoji">❓</span>
+        <h3>FAQ</h3>
+        <p>Answers to the most common questions</p>
+      </a>
+    </div>
+
+    <!-- TUTORIALS -->
+    <h2 id="getting-started">🚀 Getting Started</h2>
+
+    <div class="tutorial-section open">
+      <button class="tutorial-header" onclick="toggleTutorial(this)">
+        Creating Your First Propagation
+        <span class="arrow">▼</span>
+      </button>
+      <div class="tutorial-body">
+        <div class="tutorial-body-inner">
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-content">
+              <h4>Tap the + button</h4>
+              <p>On the Home screen, tap the green "+" button in the bottom-right corner to start a new propagation entry.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-content">
+              <h4>Enter plant details</h4>
+              <p>Give your propagation a name (e.g., "Kitchen Pothos"), select the plant species, and choose the propagation method (water, soil, moss, etc.).</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-content">
+              <h4>Add a photo</h4>
+              <p>Take a photo of your fresh cutting or choose one from your library. This will be your "Day 1" reference photo.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">4</div>
+            <div class="tutorial-step-content">
+              <h4>Set a reminder (optional)</h4>
+              <p>Enable reminders to get notified when it's time to check on your cutting, change water, or take a progress photo.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">5</div>
+            <div class="tutorial-step-content">
+              <h4>Save &amp; track</h4>
+              <p>Hit "Save" and your propagation will appear on the Home screen. Come back any time to add updates!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutorial-section">
+      <button class="tutorial-header" onclick="toggleTutorial(this)">
+        Understanding the Home Screen
+        <span class="arrow">▼</span>
+      </button>
+      <div class="tutorial-body">
+        <div class="tutorial-body-inner">
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-content">
+              <h4>Active propagations</h4>
+              <p>Your Home screen shows all active propagation projects as cards. Each card displays the plant name, days since start, current status, and the most recent photo.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-content">
+              <h4>Status indicators</h4>
+              <p>Cards are color-coded: green for healthy, yellow for needs attention, and a checkmark for successfully rooted propagations.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-content">
+              <h4>Quick actions</h4>
+              <p>Swipe on a card to access quick actions: add a photo, log a measurement, or mark as complete.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO JOURNAL -->
+    <h2 id="photo-journal">📸 Photo Journal</h2>
+
+    <div class="tutorial-section">
+      <button class="tutorial-header" onclick="toggleTutorial(this)">
+        Adding Progress Photos
+        <span class="arrow">▼</span>
+      </button>
+      <div class="tutorial-body">
+        <div class="tutorial-body-inner">
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-content">
+              <h4>Open a propagation</h4>
+              <p>Tap on any propagation card from the Home screen to open its detail view.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-content">
+              <h4>Tap "Add Entry"</h4>
+              <p>Use the "Add Entry" button to create a new journal entry. You can take a photo directly or choose from your library.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-content">
+              <h4>Add notes</h4>
+              <p>Write observations like "first roots visible" or "new leaf unfurling." These notes make your timeline more informative.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutorial-section">
+      <button class="tutorial-header" onclick="toggleTutorial(this)">
+        Creating Time-Lapse Videos
+        <span class="arrow">▼</span>
+      </button>
+      <div class="tutorial-body">
+        <div class="tutorial-body-inner">
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-content">
+              <h4>Collect enough photos</h4>
+              <p>For a good time-lapse, aim for at least 5–10 photos taken over several days or weeks.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-content">
+              <h4>Open the propagation detail</h4>
+              <p>Navigate to the propagation you want to create a time-lapse for.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-content">
+              <h4>Tap the time-lapse icon</h4>
+              <p>Look for the video/time-lapse icon in the toolbar. Rootling will compile your photos into a smooth video you can save or share.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROWTH TRACKING -->
+    <h2 id="tracking">📊 Growth Tracking</h2>
+
+    <div class="tutorial-section">
+      <button class="tutorial-header" onclick="toggleTutorial(this)">
+        Recording Measurements
+        <span class="arrow">▼</span>
+      </button>
+      <div class="tutorial-body">
+        <div class="tutorial-body-inner">
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-content">
+              <h4>Open the Growth Tracker</h4>
+              <p>Inside any propagation detail view, switch to the "Growth" tab to see the measurement tracker.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-content">
+              <h4>Log measurements</h4>
+              <p>Record root length (in cm or inches), leaf count, and overall health rating. Each entry is automatically date-stamped.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-content">
+              <h4>View charts</h4>
+              <p>Watch your growth charts come to life as you add more data points. See trends, compare progress, and identify what conditions work best.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REMINDERS -->
+    <h2 id="reminders">🔔 Reminders &amp; Notifications</h2>
+
+    <div class="tutorial-section">
+      <button class="tutorial-header" onclick="toggleTutorial(this)">
+        Setting Up Reminders
+        <span class="arrow">▼</span>
+      </button>
+      <div class="tutorial-body">
+        <div class="tutorial-body-inner">
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-content">
+              <h4>Enable notifications</h4>
+              <p>When prompted, allow Rootling to send notifications. You can also enable this in iOS Settings → Rootling → Notifications.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-content">
+              <h4>Set per-propagation reminders</h4>
+              <p>Open any propagation and tap the bell icon. Choose from preset schedules (daily, every 3 days, weekly) or set a custom interval.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-content">
+              <h4>Choose reminder types</h4>
+              <p>Get reminded to take photos, change water, check for roots, or mist your cuttings. Customize what each notification says.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- iCLOUD SYNC -->
+    <h2 id="sync">☁️ iCloud Sync</h2>
+
+    <div class="tutorial-section">
+      <button class="tutorial-header" onclick="toggleTutorial(this)">
+        Enabling iCloud Sync
+        <span class="arrow">▼</span>
+      </button>
+      <div class="tutorial-body">
+        <div class="tutorial-body-inner">
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-content">
+              <h4>Go to Settings</h4>
+              <p>Open Rootling and navigate to Settings (gear icon).</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-content">
+              <h4>Toggle iCloud Sync</h4>
+              <p>Under the Premium section, enable "iCloud Sync." This requires a Rootling Premium subscription.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-content">
+              <h4>Wait for initial sync</h4>
+              <p>Your existing data will begin syncing to iCloud. This may take a few minutes depending on how much data you have.</p>
+            </div>
+          </div>
+          <div class="tutorial-step">
+            <div class="tutorial-step-num">4</div>
+            <div class="tutorial-step-content">
+              <h4>Sign in on other devices</h4>
+              <p>Install Rootling on your other Apple devices. As long as you're signed into the same Apple ID, your data will sync automatically.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 id="faq">❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item open" onclick="toggleFaq(this)">
+      <div class="faq-q">Is Rootling free to use?</div>
+      <div class="faq-a">Yes! Rootling is free to download and use. You can track unlimited propagations, add photos, set reminders, and more. A Premium subscription unlocks additional features like iCloud sync, advanced analytics, time-lapse export, and the full plant library.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">What propagation methods does Rootling support?</div>
+      <div class="faq-a">Rootling supports all common propagation methods including water propagation, soil propagation, sphagnum moss, perlite, LECA, air layering, division, seed starting, leaf cuttings, and more. You can also add custom methods.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Can I use Rootling on my iPad?</div>
+      <div class="faq-a">Yes! Rootling is a universal app that works on both iPhone and iPad. On iPad, you'll enjoy a larger layout optimized for the bigger screen.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">How do I back up my data?</div>
+      <div class="faq-a">There are two ways: (1) Enable iCloud Sync in Settings to keep a cloud backup, or (2) your data is included in standard iPhone backups via iTunes/Finder or iCloud device backups.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">My iCloud sync isn't working. What should I do?</div>
+      <div class="faq-a">First, check that iCloud is enabled in iOS Settings → Apple ID → iCloud. Make sure you have enough iCloud storage space. Try toggling sync off and on in Rootling Settings. If the issue persists, check <a href="https://www.apple.com/support/systemstatus/" target="_blank" rel="noopener">Apple's System Status</a> page or <a href="support.html">contact us</a>.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Can I export my propagation data?</div>
+      <div class="faq-a">Yes. You can export individual propagation entries including photos and measurements, or create time-lapse videos from your photo journal. Use the share button within any propagation detail view.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Does Rootling collect my personal data?</div>
+      <div class="faq-a">No. Rootling is designed with privacy at its core. All your data stays on your device (or in your private iCloud if sync is enabled). We don't collect analytics, usage data, or personal information. Read our full <a href="privacy.html">Privacy Policy</a>.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">How do I cancel my Premium subscription?</div>
+      <div class="faq-a">Subscriptions are managed through Apple. Go to iOS Settings → Apple ID → Subscriptions → Rootling → Cancel. You'll continue to have Premium access until the end of your current billing period.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">I have a suggestion for a new feature. How can I share it?</div>
+      <div class="faq-a">We'd love to hear from you! Send your ideas to <a href="mailto:mip@gmx.biz">mip@gmx.biz</a> or use the "Send Feedback" option in the app's Settings. We read every suggestion.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Does the widget show real data?</div>
+      <div class="faq-a">Yes! The Rootling widget displays live data from your propagation projects, including the number of active propagations and recent success counts. Add it to your Home Screen from the widget gallery.</div>
+    </div>
+
+    <br>
+    <p style="text-align: center; color: var(--text-muted);">
+      Still have questions? <a href="support.html">Contact our support team</a>.
+    </p>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>🌱 Rootling</h3>
+        <p>The plant propagation tracker designed with care for plant parents everywhere.</p>
+      </div>
+      <div class="footer-col">
+        <h4>App</h4>
+        <a href="index.html#features">Features</a>
+        <a href="help.html">Help &amp; Tutorials</a>
+        <a href="help.html#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:mip@gmx.biz">mip@gmx.biz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Rootling. All rights reserved.</span>
+      <span>Made with 🌿 for plant lovers</span>
+    </div>
+  </footer>
+
+  <script>
+    // Nav
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+    });
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+    });
+
+    // Tutorials accordion
+    function toggleTutorial(btn) {
+      const section = btn.parentElement;
+      section.classList.toggle('open');
+    }
+
+    // FAQ toggle
+    function toggleFaq(item) {
+      item.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
