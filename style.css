@@ -617,7 +617,7 @@ select {
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(310px, auto);
+  grid-auto-rows: 380px;
   gap: 16px;
 }
 
@@ -648,7 +648,7 @@ select {
 .bento-image img {
   width: 100%;
   height: 100%;
-  min-height: 310px;
+  min-height: 0;
   object-fit: cover;
   object-position: top center;
 }
@@ -1263,6 +1263,10 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .bento-grid {
+    grid-auto-rows: auto;
+  }
+
   .journey-card,
   .journey-card:last-child {
     min-height: 330px;
@@ -1274,12 +1278,17 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .bento-card {
+    min-height: 320px;
+  }
+
   .timeline-demo {
     height: 130px;
   }
 
   .bento-image {
-    max-height: 500px;
+    height: min(500px, 110vw);
+    min-height: 380px;
   }
 
   .closing-card {
