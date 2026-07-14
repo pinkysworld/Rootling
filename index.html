@@ -4,174 +4,226 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rootling — Plant Propagation Tracker</title>
-  <meta name="description" content="Track your plant propagations from cutting to rooted success. Photo journals, growth analytics, reminders, and more.">
-  <meta name="theme-color" content="#16a34a">
-  <meta property="og:title" content="Rootling — Plant Propagation Tracker">
-  <meta property="og:description" content="Track your plant propagations from cutting to rooted success.">
-  <meta property="og:url" content="https://pinkysworld.github.io/Rootling/">
+  <meta name="description" content="Track cuttings, root growth, reminders, and results with Rootling, the calm plant propagation journal for iPhone and iPad.">
+  <meta name="theme-color" content="#f3f1e9">
+  <meta name="apple-itunes-app" content="app-id=6758851487">
+  <link rel="canonical" href="https://minh.systems/Rootling/">
+  <meta property="og:title" content="Rootling — Turn cuttings into thriving plants">
+  <meta property="og:description" content="Track every cutting, spot root progress, and learn which propagation methods work best for you.">
+  <meta property="og:url" content="https://minh.systems/Rootling/">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://minh.systems/Rootling/images/icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/icon.png">
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span>🌱 Rootling</span>
+      <a href="index.html" class="nav-logo" aria-label="Rootling home">
+        <img src="images/icon.png" alt="" width="38" height="38">
+        <span>Rootling</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#features">Features</a></li>
         <li><a href="help.html">Help</a></li>
         <li><a href="support.html">Support</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
       </ul>
-      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <a class="nav-download" href="https://apps.apple.com/us/app/rootling-plant-propagation/id6758851487" target="_blank" rel="noopener noreferrer">Get Rootling</a>
+      <button class="nav-hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-badge">🌿 Built for Plant Parents</div>
-      <h1>Track Every Propagation From Cut to Root</h1>
-      <p>The beautifully simple app that helps you document, track, and celebrate every step of your plant propagation journey.</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-          Download on the App Store
+  <main>
+    <section class="hero">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span>Plant propagation, beautifully organised</p>
+          <h1>Every cutting has a story. <em>Rootling remembers it.</em></h1>
+          <p class="hero-lead">Follow root growth from the first snip to a thriving plant. Keep photos, care reminders, notes, and results together in one calm journal.</p>
+          <div class="hero-actions">
+            <a href="https://apps.apple.com/us/app/rootling-plant-propagation/id6758851487" class="app-store-button" target="_blank" rel="noopener noreferrer" aria-label="Download Rootling on the App Store">
+              <span class="apple-mark" aria-hidden="true"></span>
+              <span><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+            <a href="#how-it-works" class="text-link">See how it works <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="hero-proof" aria-label="Rootling highlights">
+            <div><strong>200+</strong><span>plant guides</span></div>
+            <div><strong>15</strong><span>propagation methods</span></div>
+            <div><strong>0</strong><span>ads, ever</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay" aria-label="Rootling app preview">
+          <div class="visual-note note-top"><span class="note-dot"></span> Next root check today</div>
+          <figure class="phone-card phone-primary">
+            <img src="images/screens/home.jpg" alt="Rootling home screen showing active plant propagations" width="642" height="1389">
+          </figure>
+          <figure class="phone-card phone-secondary" aria-hidden="true">
+            <img src="images/screens/journal.jpg" alt="" width="642" height="1389">
+          </figure>
+          <div class="visual-note note-bottom"><strong>8 days</strong><span>to first roots</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Rootling capabilities">
+      <div class="marquee-track">
+        <span>Photo timelines</span><i></i><span>Smart reminders</span><i></i><span>Root progress</span><i></i><span>Method insights</span><i></i><span>Plant guides</span><i></i><span>iCloud sync</span>
+      </div>
+    </section>
+
+    <section class="journey section" id="how-it-works">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span>From snip to new growth</p>
+        <h2>A simple rhythm for healthier propagations.</h2>
+        <p>Rootling keeps the useful details close without turning plant care into admin.</p>
+      </div>
+      <div class="journey-grid">
+        <article class="journey-card reveal">
+          <span class="step-number">01</span>
+          <div class="journey-icon">✂</div>
+          <h3>Start the cutting</h3>
+          <p>Choose a plant and method, add the first photo, and record what matters while it is fresh.</p>
+        </article>
+        <article class="journey-card journey-card-featured reveal reveal-delay-small">
+          <span class="step-number">02</span>
+          <div class="journey-icon">◌</div>
+          <h3>Watch roots unfold</h3>
+          <p>Build a visual timeline and get gentle reminders for water changes, checks, and milestones.</p>
+        </article>
+        <article class="journey-card reveal reveal-delay">
+          <span class="step-number">03</span>
+          <div class="journey-icon">↗</div>
+          <h3>Learn and grow</h3>
+          <p>Compare outcomes, spot your most reliable methods, and carry what worked into the next plant.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase section" id="features">
+      <div class="section-heading section-heading-light reveal">
+        <p class="eyebrow"><span></span>Made for curious growers</p>
+        <h2>All the context. None of the clutter.</h2>
+      </div>
+      <div class="bento-grid">
+        <article class="bento-card bento-wide reveal">
+          <div class="bento-copy">
+            <p class="card-kicker">Visual progress</p>
+            <h3>See change you would otherwise miss.</h3>
+            <p>Turn everyday photos into clear timelines and shareable time-lapse stories.</p>
+          </div>
+          <div class="timeline-demo" aria-hidden="true">
+            <span><b>Day 1</b></span><span><b>Day 8</b></span><span><b>Day 21</b></span>
+          </div>
+        </article>
+        <article class="bento-card bento-image reveal reveal-delay-small">
+          <img src="images/screens/insights.jpg" alt="Rootling insights screen showing propagation results" loading="lazy" width="642" height="1389">
+        </article>
+        <article class="bento-card reveal">
+          <p class="card-kicker">Care on time</p>
+          <h3>Helpful nudges, not noise.</h3>
+          <p>Schedule water changes, root checks, and transplant reminders around each propagation.</p>
+          <div class="reminder-pill"><span>Water change</span><strong>Today</strong></div>
+        </article>
+        <article class="bento-card bento-accent reveal reveal-delay-small">
+          <p class="card-kicker">200+ guides</p>
+          <h3>Species-specific advice when you need it.</h3>
+          <div class="plant-tags"><span>Monstera</span><span>Pothos</span><span>Hoya</span><span>Succulents</span></div>
+        </article>
+        <article class="bento-card reveal reveal-delay">
+          <p class="card-kicker">Private by design</p>
+          <h3>Your growing history stays yours.</h3>
+          <p>Keep data on-device or sync privately through iCloud. Rootling has no ads and does not sell your data.</p>
+          <div class="privacy-seal" aria-hidden="true">◎</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <div class="closing-card reveal">
+        <img class="closing-icon" src="images/icon.png" alt="Rootling app icon" width="96" height="96">
+        <p class="eyebrow"><span></span>Available for iPhone and iPad</p>
+        <h2>Give your next cutting a better start.</h2>
+        <p>Download Rootling and turn small observations into healthier plants.</p>
+        <a href="https://apps.apple.com/us/app/rootling-plant-propagation/id6758851487" class="app-store-button app-store-button-dark" target="_blank" rel="noopener noreferrer" aria-label="Download Rootling on the App Store">
+          <span class="apple-mark" aria-hidden="true"></span>
+          <span><small>Download on the</small><strong>App Store</strong></span>
         </a>
-        <a href="#features" class="btn btn-secondary">Explore Features ↓</a>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- FEATURES -->
-  <section class="features" id="features">
-    <div class="section-label">✨ Features</div>
-    <h2 class="section-title">Everything you need to propagate with confidence</h2>
-    <p class="section-subtitle">Whether you're rooting your first pothos cutting or managing dozens of propagations, Rootling has you covered.</p>
-
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon green">📸</div>
-        <h3>Photo Journal</h3>
-        <p>Document every stage of growth with time-stamped photos. Create beautiful visual timelines and even export time-lapse videos.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon teal">📊</div>
-        <h3>Growth Analytics</h3>
-        <p>Visualize your propagation journey with interactive growth charts, success rate tracking across 15 methods, and detailed statistics.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon amber">🔔</div>
-        <h3>Smart Reminders</h3>
-        <p>Never forget to check on your cuttings. Set custom reminders for watering, medium changes, and progress photos.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon sky">🌤️</div>
-        <h3>Weather Integration</h3>
-        <p>See how local conditions affect your propagations. Track temperature, humidity, and light alongside your plant data.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon coral">📚</div>
-        <h3>Plant Library</h3>
-        <p>Browse 200+ plants across 15 propagation methods with optimal conditions, care tips, and step-by-step instructions for each species.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon purple">☁️</div>
-        <h3>iCloud Sync</h3>
-        <p>Your data syncs seamlessly across all your devices via iCloud. Never lose your propagation history.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon green">📱</div>
-        <h3>Home Screen Widget</h3>
-        <p>Keep an eye on your propagations without opening the app. See active counts and recent successes right on your Home Screen.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon teal">📤</div>
-        <h3>PDF &amp; CSV Export</h3>
-        <p>Export your propagation data as PDF reports or CSV files. Create time-lapse videos from your photo journal to share your journey.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section class="stats">
-    <div class="stats-inner">
-      <div class="stat-item">
-        <h3>200+</h3>
-        <p>Plants in Library</p>
-      </div>
-      <div class="stat-item">
-        <h3>15</h3>
-        <p>Propagation Methods</p>
-      </div>
-      <div class="stat-item">
-        <h3>100%</h3>
-        <p>Privacy Focused</p>
-      </div>
-      <div class="stat-item">
-        <h3>0</h3>
-        <p>Ads, Ever</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <div class="cta-inner">
-      <h2>Start Your Propagation Journey</h2>
-      <p>Join plant lovers who trust Rootling to keep their propagation projects organized and thriving.</p>
-      <a href="#" class="btn btn-primary">Download on the App Store</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <h3>🌱 Rootling</h3>
-        <p>The plant propagation tracker designed with care for plant parents everywhere.</p>
+        <a href="index.html" class="nav-logo"><img src="images/icon.png" alt="" width="38" height="38"><span>Rootling</span></a>
+        <p>The calm propagation journal for plant people who like to notice what works.</p>
       </div>
       <div class="footer-col">
-        <h4>App</h4>
+        <h4>Explore</h4>
         <a href="#features">Features</a>
         <a href="help.html">Help &amp; Tutorials</a>
-        <a href="help.html#faq">FAQ</a>
+        <a href="support.html">Support</a>
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
         <a href="privacy.html">Privacy Policy</a>
-        <a href="support.html">Support</a>
+        <a href="https://apps.apple.com/us/app/rootling-plant-propagation/id6758851487" target="_blank" rel="noopener noreferrer">View on App Store</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
         <a href="mailto:mip@gmx.biz">mip@gmx.biz</a>
+        <a href="https://minh.systems/Rootling/">minh.systems/Rootling</a>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Rootling. All rights reserved.</span>
-      <span>Made with 🌿 for plant lovers</span>
+      <span>Made for patient growers.</span>
     </div>
   </footer>
 
   <script>
-    // Nav scroll shadow
-    window.addEventListener('scroll', () => {
-      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+    const nav = document.getElementById('nav');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 12), { passive: true });
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     });
-    // Mobile menu
-    document.getElementById('hamburger').addEventListener('click', () => {
-      document.getElementById('navLinks').classList.toggle('open');
+
+    document.querySelectorAll('.nav-links a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
     });
-    // Close menu on link click
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
-    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
   </script>
 </body>
 </html>

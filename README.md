@@ -16,13 +16,13 @@ This `docs/` folder contains the GitHub Pages website for Rootling.
 1. Push this repo to GitHub at `pinkysworld/Rootling`
 2. Go to **Settings → Pages**
 3. Set **Source** to "Deploy from a branch"
-4. Set **Branch** to `main` and folder to `/docs`
-5. Save — your site will be live at `https://pinkysworld.github.io/Rootling/`
+4. Set **Branch** to `docs` and folder to `/(root)`
+5. Save — the public site is available at `https://minh.systems/Rootling/`
 
 ## Linked in App
 
 The app's Settings view links to:
-- `https://pinkysworld.github.io/Rootling/privacy` — Privacy Policy
-- `https://pinkysworld.github.io/Rootling/help` — Help & Tutorials
-- `https://pinkysworld.github.io/Rootling/` — Website
+- `https://minh.systems/Rootling/privacy.html` — Privacy Policy
+- `https://minh.systems/Rootling/help.html` — Help & Tutorials
+- `https://minh.systems/Rootling/` — Website
 - `mailto:mip@gmx.biz` — Send Feedback
